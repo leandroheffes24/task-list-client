@@ -1,7 +1,8 @@
 import {useEffect, useState} from 'react'
 import {Button, Card, CardContent, CircularProgress, Typography} from '@mui/material'
 import {useNavigate} from 'react-router-dom'
-const apiUrl = import.meta.env.REACT_APP_API_URL
+const apiUrl = process.env.REACT_APP_API_URL;
+console.log('API URL:', process.env.REACT_APP_API_URL);
 
 export default function TaskList() {
   const [tasks, setTasks] = useState([])

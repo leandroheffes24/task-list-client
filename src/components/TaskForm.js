@@ -1,7 +1,7 @@
 import { Button, Card, CardContent, CircularProgress, Grid2, TextField, Typography } from '@mui/material'
 import { useState, useEffect } from 'react';
 import {useNavigate, useParams} from 'react-router-dom'
-const apiUrl = import.meta.env.REACT_APP_API_URL
+const apiUrl = process.env.REACT_APP_API_URL;
 
 export default function TaskForm() {
   const [task, setTask] = useState({title: '', description: ''})
